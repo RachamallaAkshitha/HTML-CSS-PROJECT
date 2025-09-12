@@ -1,0 +1,57 @@
+.container p{
+    display: inline;
+    color: grey;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    padding: 20px 60px;
+}
+.About{
+    display: flex;
+    gap:20px;
+}
+.About i{
+    color: orangered;
+}
+.icons i {
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 4px;
+    padding-right: 5px;
+    background-color: lightgray;
+    color: white;
+}
+.villa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav a{
+    text-decoration: none;
+    display: flex;
+    color: black;
+}
+.schedule{
+    background-color: black;
+    color: red;
+    border-radius: 15px;
+    padding: 5px;
+    width: 150px;
+}
+.schedule i{
+    color: white;
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 5px;
+}
