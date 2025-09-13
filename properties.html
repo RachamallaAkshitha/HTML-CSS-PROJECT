@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Header starts here -->
+    <header>
+        <div class="top-bar">
+            <div class="about">
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>info@company.com</p>
+                </div>
+                <div class="map">
+                    <i class="fa-solid fa-map"></i>
+                    <p>Sunny isles Beach, Fl 33160</p>
+                </div>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="villa">
+            <div class="heading">
+                <h1>VILLA</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Properties.html">Properties</a></li>
+                    <li><a href="./PropertyDetails.html">Property Details</a></li>
+                    <li><a href="./ContactUs.html">Contact Us</a></li>
+                    <li class="schedule"><i class="fa-solid fa-calendar"></i>Schedule a visit</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Nav bar for small screens -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <h1>VILLA</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Villa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Properties.html">Properties</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./PropertyDetails.html">Property Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ContactUs.html">ContactUs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header ends here -->
 </body>
 </html>
