@@ -1,23 +1,25 @@
-.top-bar p{
+.top-bar p {
     display: inline;
     color: grey;
 }
-.top-bar{
+
+.top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid whitesmoke;
     padding: 20px 60px;
 }
-.about
-{
+
+.about {
     display: flex;
-    gap:20px;
+    gap: 20px;
 }
-.about
- i{
+
+.about i {
     color: orangered;
 }
+
 .icons i {
     font-size: 18px;
     border-radius: 50%;
@@ -26,341 +28,843 @@
     background-color: lightgray;
     color: white;
 }
-.villa{
+
+.villa {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
 }
-.nav ul{
+
+.nav ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     display: flex;
     color: black;
 }
-.schedule{
+
+.schedule {
     background-color: black;
     color: red;
     border-radius: 15px;
     padding: 5px;
     width: 150px;
 }
-.schedule i{
+
+.schedule i {
     color: white;
     background-color: orangered;
     border-radius: 50%;
     padding: 5px;
 }
-.navbar{
+
+.navbar {
     display: none;
 }
-.place{
+
+.place {
     background-color: white;
     text-align: center;
     width: 130px;
     padding: 2px;
 }
-#carouselExample{
+
+#carouselExample {
     position: relative;
 }
-.content h2{
+
+.content h2 {
     color: white;
     font-size: 53px;
     font-weight: bold;
 }
-.content{
+
+.content {
     position: absolute;
     top: 42%;
-    left:25%;
+    left: 25%;
 }
-.container{
+
+.container {
     display: flex;
     gap: 40px;
     padding-left: 30px;
 }
-.feature{
-    width:650px;
+
+.feature {
+    width: 650px;
 }
-.feature h2{
+
+.feature h2 {
     font-weight: bolder;
     font-size: 40px;
 }
-.feature P{
+
+.feature P {
     color: red;
 }
-.accordion{
+
+.accordion {
     width: 450px;
 }
+
 .accordion-item {
-  background-color: transparent !important;
-  border: none !important;
+    background-color: transparent !important;
+    border: none !important;
 }
+
 .accordion-button {
-  background-color: transparent !important;
-  box-shadow: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
-.details{
+
+.details {
     width: 400px;
     box-shadow: 0 0 8px 3px lightgray;
     padding: 20px;
 }
-.info{
+
+.info {
     display: flex;
     align-items: center;
     padding: 20px;
     gap: 20px;
     border-bottom: 2px solid rgb(241, 240, 240);
 }
-.info h4{
+
+.info h4 {
     font-weight: bold;
 }
-.info img{
+
+.info img {
     height: 50px;
 }
-.space p{
-    color:rgb(193, 192, 192);
+
+.space p {
+    color: rgb(193, 192, 192);
 }
-.featured-icon{
+
+.featured-icon {
     background-color: orangered;
     padding: 25px;
     width: 120px;
     border-radius: 50%;
     position: relative;
-    bottom:95px;
-    left:60px;
+    bottom: 95px;
+    left: 60px;
 }
-.featured-icon img{
+
+.featured-icon img {
     width: 70px;
 }
-.video-bg img{
+
+.video img {
     width: 100%;
+    height: 400px;
 }
-.video-txt h2{
-    font-weight: bolder;
-    color: white;
-}
-.video-txt span{
-    color: orangered;
-}
-.video-txt{
-    width: 500px;
-    font-weight: bold;
+
+.video-text {
     text-align: center;
     position: relative;
-    bottom: 425px;
-    left: 35%;
+    bottom: 330px;
+}
+
+.video-text p {
+    color: orangered;
+}
+
+.video-text h2 {
+    color: white;
+    font-weight: bold;
+}
+
+
+#video-frame {
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+    left: 25%;
+}
+
+#play-icon {
+    color: orangered;
+    border-radius: 50%;
+    background-color: white;
+
+    padding: 8px;
+    position: relative;
+    bottom: 140px;
+    left: 760px;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-right: 30px;
+    padding-left: 15px;
+    box-shadow: 0 0 30px 10px orangered;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: #fde9e2;
+    padding: 0px 15px;
+    position: relative;
+}
+
+.box span {
+    color: orangered;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.box p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.box .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: orangered;
+    bottom: 75%;
+    left: 85%;
+}
+
+.best-container {
+    background-color: whitesmoke;
+    padding: 80px 0px;
+}
+
+.best-deal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.best-deal span,
+h2 {
+    font-weight: bolder;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    height: 45px;
+}
+
+.buttons button {
+    border-radius: 5px;
+    padding: 5px 40px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.flat {
+    display: flex;
+    gap: 70px;
+    padding: 20px 100px;
+}
+
+.data {
+    border-radius: 5px;
+    padding: 10px 30px;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0 0 5px 4px lightgray;
+}
+
+.data .information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.information p {
+    margin: 0%;
+    font-weight: bolder;
+}
+
+.information span {
+    color: gray;
+}
+
+.extra-info {
+    width: 400px;
+    padding: 0px 20px;
+}
+
+.extra-info h5 {
+    padding-bottom: 20px;
+}
+
+.extra-info button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+}
+
+.extra-info i {
+    color: white;
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 4px;
+}
+/* Properties */
+.properties span,h2{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    gap: 60px;
+    padding: 20px 115px;
+}
+.card{
+    width: 390px;
+    height: 570px;
+    padding: 20px 20px;
+    background-color: whitesmoke;
+    border: none;
+}
+.card span{
+    background-color:#fbd9cf;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+.luxury{
+    display: flex;
+    justify-content: space-between;
+}
+.title h5{
+    font-weight: bold;
+}
+.villa-info1{
+    display: flex;
     gap: 20px;
 }
-.video-frame{
-    width: 450px;
-    position: relative;
-    bottom: 338px;
-    left: 15%;
+.villa-info2{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid lightgray;
 }
+.villa-info1 p{
+    margin: 0;
+}
+.card button{
+    width: 150px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin:auto;
+}
+/* Contactus */
+.contact-us{
+    position: relative;
+}
+.text span{
+    font-size: 13px;
+    font-weight: bold;
+}
+.contact-us .text{
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 40%;
+    bottom: 60%;
+}
+.contact-us img{
+    width: 100%;
+}
+iframe{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* ------------------------------------------MEDIA QUERY FOR LARGE MOBILE--------------------------------------------------------------------------------------------------------------------- */
-@media (min-width:425px) and (max-width:767px){
- .top-bar{
-         padding:5px 15px;
+@media (min-width:425px) and (max-width:767px) {
+    .top-bar {
+        padding: 5px 15px;
     }
-.top-bar p{
-    font-size: 10px;
-} 
-.about
- i{
-    font-size:10px;
-}
-.icons i {
-    font-size: 10px;
-    padding-right: 15px;
-}
-.villa{
-    display:none;
-}
-.navbar{
-    display:block;
-}
-.navbar-toggler{
-    font-size: 15px;
-    padding: 5px;
-}
-.place{
-    font-size: 10px;
-    width: 80px;
-}
-.content h2{
-    font-size: 15px;
-}
-.content{
-    top: 18%;
-    left:23%;
-}
-.container{
+
+    .top-bar p {
+        font-size: 10px;
+    }
+
+    .about i {
+        font-size: 10px;
+    }
+
+    .icons i {
+        font-size: 10px;
+        padding-right: 15px;
+    }
+
+    .villa {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .navbar-toggler {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .place {
+        font-size: 10px;
+        width: 80px;
+    }
+
+    .content h2 {
+        font-size: 15px;
+    }
+
+    .content {
+        top: 18%;
+        left: 23%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .accordion {
+        width: 400px;
+    }
+
+    .details {
+        width: 380px;
+    }
+
+    .feature {
+        width: 400px;
+    }
+
+    .featured-icon {
+        position: relative;
+        padding: 25px;
+        width: 100px;
+        border-radius: 50%;
+        bottom: 1130px;
+        left: 1px;
+    }
+
+    .featured-icon img {
+        width: 50px;
+    }
+
+    .video img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-text {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 130px;
+        left: 0px;
+    }
+
+    .video-text p {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    .video-text h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    #video-frame {
+        margin: 0px;
+        width: 300px;
+        height: 150px;
+        position: absolute;
+        left: 15%;
+        top: 77px;
+    }
+
+    #play-icon {
+        position: relative;
+        bottom: 67px;
+        left: 197px;
+        font-size: 12px;
+        padding-right: 16px;
+        padding-left: 7px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .box span {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .box {
+        width: 127px;
+        gap: 10px;
+    }
+
+    .box .circle {
+        height: 20px;
+        width: 20px;
+        bottom: 71%;
+        left: 88%;
+    }
+
+    .best-deal {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 40px;
+    }
+
+    .buttons button {
+        padding: 5px 30px;
+    }
+
+    .flat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data {
+        padding: 5px 20px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .flat img {
+        width: 450px;
+    }
+    .cards{
     display: flex;
     flex-direction: column;
-    gap:50px;
-}
-.accordion{
-    width: 400px;
-}
-.details{
-    width: 380px;
-}
-.feature{
-    width: 400px;
-}
-.featured-icon{
-    position: relative;
-    padding: 25px;
-    width: 100px;
-    border-radius: 50%;
-    bottom:1130px;
-    left:1px;
-}
-.featured-icon img{
-    width: 50px;
-}
-.video-txt{
-    width: 300px;
-    font-weight: bold;
-    font-size: 8px;
-    position: relative;
-    bottom: 113px;
-    left: 15%;
-}
-.video-txt h2{
-    font-size: 10px;
-}
-.video-frame{
-    width: 325px;
-    position: relative;
-    bottom: 101px;
-    left: 12%;
-}
-.video-frame img{
-    height: 145px;
+    gap: 20px;
+    padding: 10px 30px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------MEDIA QUERY FOR TABLET--------------------------------------------------------------------------------------------------------------------------- */
-@media (min-width:768px) and (max-width:1023px){
-    .navbar{
-    display:block;
-}
-.villa{
-    display:none;
-}
-.top-bar{
-    padding: 10px 20px;
-}
-.place{
-    font-size: 10px;
-    width: 80px;
-}
-.content h2{
-    font-size: 28px;
-}
-.content{
-    top: 28%;
-    left:23%;
-}
-.container{
+@media (min-width:768px) and (max-width:1023px) {
+    .navbar {
+        display: block;
+    }
+
+    .villa {
+        display: none;
+    }
+
+    .top-bar {
+        padding: 10px 20px;
+    }
+
+    .place {
+        font-size: 10px;
+        width: 80px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content {
+        top: 28%;
+        left: 23%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 400px;
+    }
+
+    .featured-icon {
+        position: relative;
+        padding: 25px;
+        width: 100px;
+        border-radius: 50%;
+        bottom: 1111px;
+        left: 170px;
+    }
+
+    .featured-icon img {
+        width: 50px;
+    }
+
+    .video img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-text {
+        position: relative;
+        bottom: 235px;
+        right: 15px;
+    }
+
+    .video-text p {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .video-text h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #video-frame {
+        margin: 0px;
+        width: 500px;
+        height: auto;
+        position: absolute;
+        left: 20%;
+        top: 100px;
+    }
+
+    #play-icon {
+        position: relative;
+        bottom: 120px;
+        left: 385px;
+        font-size: 18px;
+    }
+
+    .best-deal {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+        height: 40px;
+    }
+
+    .buttons button {
+        padding: 5px 30px;
+    }
+
+    .flat {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 45px;
+        gap: 20px;
+    }
+
+    .data {
+        padding: 10px 25px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .flat img {
+        width: 350px;
+    }
+     .cards{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.feature{
-    width: 400px;
-}
-.featured-icon{
-    position: relative;
-    padding: 25px;
-    width: 100px;
-    border-radius: 50%;
-    bottom:1111px;
-    left:170px;
-}
-.featured-icon img{
-    width: 50px;
-}
-.video-txt{
-    width: 300px;
-    font-size: 8px;
-    position: relative;
-    bottom: 219px;
-    left: 31%;
-}
-.video-txt h2{
-    font-size: 20px;
-}
-.video-frame{
-    width: 325px;
-    bottom: 168px;
-    left: 12%;
-}
-.video-frame img{
-    height: 260px;
+    gap: 20px;
+    padding: 10px 30px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------MEDIA QUERIES FOR LAPTOP-------------------------- */
-@media (min-width:1024px) and (max-width:1439px){
-.place{
-    width: 130px;
-}
-.content h2{
-    font-size: 40px;
-}
-.content{
-    top: 32%;
-    left:22%;
-}
-.container{
-    display: flex;
-    gap: 10px;
-}
-.featured-image{
-    width: 300px;
-}
-.feature{
-    width: 330px;
-}
-.accordion{
-    width: 350px;
-}
-.featured-icon{
-    padding: 25px;
-    width: 100px;
-    border-radius: 50%;
-    position: relative;
-    bottom:70px;
-    left:20px;
-}
-.featured-icon img{
-    width: 50px;
-}
-.video-txt{
-    width: 300px;
-    font-size: 13px;
-    position: relative;
-    bottom: 287px;
-    left: 36%;
-}
-.video-txt h2{
-    font-size: 25px;
-}
-.video-frame{
-    width: 325px;
-    bottom: 168px;
-    left: 12%;
-}
-.video-frame img{
-    height: 345px;
-}
+@media (min-width:1024px) and (max-width:1439px) {
+    .place {
+        width: 130px;
+    }
+
+    .content h2 {
+        font-size: 40px;
+    }
+
+    .content {
+        top: 32%;
+        left: 22%;
+    }
+
+    .container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .featured-image {
+        width: 300px;
+    }
+
+    .feature {
+        width: 330px;
+    }
+
+    .accordion {
+        width: 350px;
+    }
+
+    .featured-icon {
+        padding: 25px;
+        width: 100px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 70px;
+        left: 20px;
+    }
+
+    .featured-icon img {
+        width: 50px;
+    }
+
+    #video-frame {
+        margin: 0px;
+        width: 700px;
+        height: auto;
+        position: absolute;
+        left: 15%;
+        top: 145px;
+    }
+
+    #play-icon {
+        position: relative;
+        bottom: 150px;
+        left: 480px;
+    }
+
+    .best-deal {
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+
+    .buttons {
+        gap: 10px;
+        height: 40px;
+    }
+
+    .buttons button {
+        padding: 5px 30px;
+    }
+
 }
