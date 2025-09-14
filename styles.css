@@ -150,15 +150,18 @@
 }
 .video-txt{
     width: 500px;
+    font-weight: bold;
     text-align: center;
     position: relative;
-    bottom: 400px;
+    bottom: 425px;
     left: 35%;
+    gap: 20px;
 }
 .video-frame{
+    width: 450px;
     position: relative;
     bottom: 338px;
-    left: 13%;
+    left: 15%;
 }
 
 
@@ -225,6 +228,26 @@
 .featured-icon img{
     width: 50px;
 }
+.video-txt{
+    width: 300px;
+    font-weight: bold;
+    font-size: 8px;
+    position: relative;
+    bottom: 113px;
+    left: 15%;
+}
+.video-txt h2{
+    font-size: 10px;
+}
+.video-frame{
+    width: 325px;
+    position: relative;
+    bottom: 101px;
+    left: 12%;
+}
+.video-frame img{
+    height: 145px;
+}
 }
 /* ----------------------MEDIA QUERY FOR TABLET--------------------------------------------------------------------------------------------------------------------------- */
 @media (min-width:768px) and (max-width:1023px){
@@ -267,6 +290,24 @@
 .featured-icon img{
     width: 50px;
 }
+.video-txt{
+    width: 300px;
+    font-size: 8px;
+    position: relative;
+    bottom: 219px;
+    left: 31%;
+}
+.video-txt h2{
+    font-size: 20px;
+}
+.video-frame{
+    width: 325px;
+    bottom: 168px;
+    left: 12%;
+}
+.video-frame img{
+    height: 260px;
+}
 }
 /* ------------------MEDIA QUERIES FOR LAPTOP-------------------------- */
 @media (min-width:1024px) and (max-width:1439px){
@@ -303,5 +344,23 @@
 }
 .featured-icon img{
     width: 50px;
+}
+.video-txt{
+    width: 300px;
+    font-size: 13px;
+    position: relative;
+    bottom: 287px;
+    left: 36%;
+}
+.video-txt h2{
+    font-size: 25px;
+}
+.video-frame{
+    width: 325px;
+    bottom: 168px;
+    left: 12%;
+}
+.video-frame img{
+    height: 345px;
 }
 }
