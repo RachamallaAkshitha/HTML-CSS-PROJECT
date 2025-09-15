@@ -125,7 +125,7 @@
     box-shadow: none !important;
 }
 
-.details {
+.container .details {
     width: 400px;
     box-shadow: 0 0 8px 3px lightgray;
     padding: 20px;
@@ -452,20 +452,24 @@ form textarea {
     border: transparent;
     padding: 10px 10px;
 }
-form button{
+
+form button {
     background-color: black;
     color: white;
     border-radius: 20px;
     padding: 5px 10px;
 }
-.call-details{
+
+.call-details {
     display: flex;
     position: relative;
     top: 345px;
     left: 11%;
     gap: 40px;
 }
-.call,.mail{
+
+.call,
+.mail {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -474,14 +478,19 @@ form button{
     border-radius: 5px;
     box-shadow: 0 0 5px 4px lightgray;
 }
-.call p,.mail p{
+
+.call p,
+.mail p {
     margin: 0;
-} 
-.call i,.mail i{
+}
+
+.call i,
+.mail i {
     color: orangered;
     font-size: 40px;
 }
-.footer{
+
+.footer {
     height: 80px;
     background-color: black;
     color: white;
@@ -492,9 +501,139 @@ form button{
     margin-top: 80px;
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------PROPERTY DETAILS CSS--------------------------------------------------------------------------------------- */
 
+.behind-image img {
+    width: 100%;
+}
 
+.behind-image {
+    position: relative;
+}
 
+.behind-text {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 38%;
+}
+
+.behind-text span {
+    background-color: white;
+    padding: 10px 15PX;
+    font-size: 10px;
+}
+
+.behind-text h1 {
+    color: white;
+    font-weight: bolder;
+    padding-top: 25px;
+}
+
+.apartment {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.apartment .details {
+    box-shadow: 0px 0px 5px grey;
+    width: 400px;
+    padding: 10px 15px;
+}
+
+.apartment-text span {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.apartment-text h4 {
+    padding-bottom: 40px;
+    font-weight: bolder;
+}
+
+.apartment-text {
+    padding: 30px 80px;
+}
+
+.apartment-text .para {
+    border-top: 1px solid lightgray;
+    padding-top: 40px;
+    width: 880px;
+    text-align: justify;
+}
+.apartment-text .accordion{
+    width: 900px;
+    background-color: whitesmoke;
+    margin-bottom: 60px;
+}
+.foot{
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+/* -------------------PROPERTIES CSS-------------------------------------------------------------------------------------------------------------------------- */
+
+.back-image img {
+    width: 100%;
+}
+
+.back-image {
+    position: relative;
+}
+
+.back-text {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 41%;
+}
+
+.back-text span {
+    background-color: white;
+    padding: 10px 15PX;
+    font-size: 10px;
+}
+
+.back-text h1 {
+    color: white;
+    font-weight: bolder;
+    padding-top: 25px;
+}
+.properties-buttons{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.properties-buttons button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: none;
+    margin-top:80px ;
+    margin-bottom: 60px;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.number button{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
 /* ------------------------------------------MEDIA QUERY FOR LARGE MOBILE--------------------------------------------------------------------------------------------------------------------- */
 @media (min-width:425px) and (max-width:767px) {
     .top-bar {
@@ -684,44 +823,122 @@ form button{
         width: 350px;
         height: 244px;
     }
+
     .text span {
         font-size: 8px;
     }
 
-   .contact-us .text {
+    .contact-us .text {
         left: 40%;
         bottom: 93%;
-   }
-    .text h2{
+    }
+
+    .text h2 {
         font-size: 12px;
     }
+
     form {
         position: relative;
         width: 400px;
         top: 207px;
         left: 4%;
     }
-    form input{
-        width: 354px;
-    }
-    form textarea{
-        width: 354px;
-    }
-    .call,.mail{
-    gap: 20px;
-    padding: 5px;
-    width: 221px;
 
+    form input {
+        width: 354px;
+    }
+
+    form textarea {
+        width: 354px;
+    }
+
+    .call,
+    .mail {
+        gap: 20px;
+        padding: 5px;
+        width: 221px;
+
+    }
+
+    .call-details {
+        top: 250px;
+        left: 2%;
+        gap: 40px;
+    }
+
+    .footer {
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    /* ---------------PROPERTY DETAILS----------------------------------------------------------------------------------------------------------- */
+    .apartment {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .apartment .prpty-img {
+        width: 100%;
+    }
+
+    .behind-text span {
+        padding: 2px 5PX;
+        font-size: 5px;
+    }
+
+    .behind-text h1 {
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    .behind-text {
+        top:18%;
+        left: 40%;
+    }
+
+    .apartment-text {
+        padding: 30px 30px;
+    }
+
+    .apartment-text .para {
+        border-top: 1px solid lightgray;
+        padding-top: 20px;
+        width: 350px;
+    }
+
+    .apartment-text h4 {
+        padding-bottom: 20px;
+    }
+    .apartment-text .accordion{
+        width: 100%;
+    }
+
+/* --------------------PROPERTIES------------------------------------------------------------------------------------------------------------------- */
+     .back-text span {
+        padding: 1px 4px;
+        font-size: 7px;
+    }
+
+    .back-text h1 {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .back-text {
+        top: 20%;
+        left:42%;
+    }
+    .properties-buttons button{
+    padding: 4px 5px;
 }
-.call-details{
-    top: 250px;
-    left: 2%;
-    gap: 40px;
-}
-.footer{
-    font-size: 10px;
-    margin-top: 0px;
-}
+.foot {
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
 }
 
 
@@ -853,29 +1070,95 @@ form button{
         gap: 20px;
         padding: 10px 30px;
     }
-    .contact-us .text{
+
+    .contact-us .text {
         top: 4%;
     }
-     iframe {
+
+    iframe {
         position: absolute;
         top: 15%;
         left: 10%;
         height: 250px;
     }
-     form {
+
+    form {
         position: relative;
         width: 500px;
         top: 180px;
         left: 17%;
     }
-    .call-details{
-    top: 250px;
-    left: 10%;
-    gap: 40px;
-}
-.footer{
-    margin-top: 0;
-}
+
+    .call-details {
+        top: 250px;
+        left: 10%;
+        gap: 40px;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+    .apartment-text .accordion{
+        width: 100%;
+    }
+     .back-text span {
+        padding: 1px 4px;
+        font-size: 10px;
+    }
+    .back-text h1 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .back-text {
+        top: 20%;
+        left:42%;
+    }
+
+
+
+
+    /* ---------PROPERTY DETAILS------------------------------------------------------------------------------------------------------------------------ */
+    .behind-text span {
+        padding: 2px 5PX;
+        font-size: 10px;
+    }
+
+    .behind-text h1 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .behind-text {
+        top:28%;
+        left: 40%;
+    }
+    
+    .apartment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apartment .prpty-img {
+        width: 100%;
+    }
+
+    .apartment-text h4 {
+        padding-bottom: 20px;
+    }
+
+    .apartment-text {
+        padding: 30px 50px;
+        justify-content: center;
+    }
+
+    .apartment-text .para {
+        border-top: 1px solid lightgray;
+        padding-top: 20px;
+        width: 700px;
+    }
+
 }
 
 
@@ -955,56 +1238,4 @@ form button{
         padding: 5px 30px;
     }
 
-}
-/* ----------------------------------------------------------------------------------------------------------------------- */
-/* ----------------------------------PROPERTY DETAILS CSS--------------------------------------------------------------------------------------- */
-.behind-image img{
-    width: 100%;
-}
-.behind-image{
-        position: relative;
-}
-.behind-text{
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 38%;
-}
-.behind-text span{
-    background-color: white;
-    padding: 10px 15PX;
-    font-size: 10px;
-}
-.behind-text h1{
-    color: white;
-    font-weight:bolder;
-    padding-top: 25px;
-}
-.apartment{
-    display: flex;
-    gap: 70px;
-    justify-content: center;
-    padding-top: 80px;
-}
-
-
-/* ---------------------------MEDIA QUERIES FOR LARGE MOBILE--------------------------------------------------------------------------------------------- */
-@media (min-width:425px) and (max-width:767px) {
-.apartment{
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px ;
-}
-.behind-text span{
-    background-color: white;
-    padding: 2px 5PX;
-    font-size: 5px;
-}
-.behind-text h1{
-    font-size: 10px;
-    padding-top: 5px;
-}
-.behind-text{
-    top: 20%;
-}
 }
