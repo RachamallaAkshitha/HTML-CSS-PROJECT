@@ -335,90 +335,162 @@ h2 {
     border-radius: 50%;
     padding: 4px;
 }
+
 /* Properties */
-.properties span,h2{
+.properties span,
+h2 {
     text-align: center;
 }
-.cards{
+
+.cards {
     display: flex;
     gap: 60px;
     padding: 20px 115px;
 }
-.card{
+
+.card {
     width: 390px;
     height: 570px;
     padding: 20px 20px;
     background-color: whitesmoke;
     border: none;
 }
-.card span{
-    background-color:#fbd9cf;
+
+.card span {
+    background-color: #fbd9cf;
     border-radius: 5px;
     padding: 5px 10px;
 
 }
-.luxury{
+
+.luxury {
     display: flex;
     justify-content: space-between;
 }
-.title h5{
+
+.title h5 {
     font-weight: bold;
 }
-.villa-info1{
+
+.villa-info1 {
     display: flex;
     gap: 20px;
 }
-.villa-info2{
+
+.villa-info2 {
     display: flex;
     gap: 20px;
     border-bottom: 1px solid lightgray;
 }
-.villa-info1 p{
+
+.villa-info1 p {
     margin: 0;
 }
-.card button{
+
+.card button {
     width: 150px;
     border-radius: 20px;
     background-color: black;
     color: white;
-    margin:auto;
+    margin: auto;
 }
+
 /* Contactus */
-.contact-us{
+.contact-us {
     position: relative;
 }
-.text span{
+
+.text span {
     font-size: 13px;
     font-weight: bold;
 }
-.contact-us .text{
+
+.contact-us .text {
     text-align: center;
     color: white;
     position: absolute;
     left: 40%;
     bottom: 60%;
 }
-.contact-us img{
+
+.contact-us img {
     width: 100%;
 }
-iframe{
+
+iframe {
     position: absolute;
     top: 50%;
     right: 50%;
 }
 
+form {
+    padding: 20px 25px;
+    background-color: white;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px lightgray;
+}
 
+form input {
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 450px;
+    border: transparent;
+}
 
+form input,
+label {
+    padding: 10px 10px;
+}
 
-
-
-
-
-
-
-
-
-
+form textarea {
+    border-radius: 25px;
+    background-color: whitesmoke;
+    border: transparent;
+    padding: 10px 10px;
+}
+form button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.call-details{
+    display: flex;
+    position: relative;
+    top: 345px;
+    left: 11%;
+    gap: 40px;
+}
+.call,.mail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 280px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 4px lightgray;
+}
+.call p,.mail p{
+    margin: 0;
+} 
+.call i,.mail i{
+    color: orangered;
+    font-size: 40px;
+}
+.footer{
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    top: 400px;
+    position: relative;
+    margin-top: 80px;
+}
 
 
 
@@ -597,50 +669,60 @@ iframe{
     .flat img {
         width: 450px;
     }
-    .cards{
-    display: flex;
-    flex-direction: column;
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 30px;
+    }
+
+    iframe {
+        position: absolute;
+        top: 9%;
+        left: 9%;
+        width: 350px;
+        height: 244px;
+    }
+    .text span {
+        font-size: 8px;
+    }
+
+   .contact-us .text {
+        left: 40%;
+        bottom: 93%;
+   }
+    .text h2{
+        font-size: 12px;
+    }
+    form {
+        position: relative;
+        width: 400px;
+        top: 207px;
+        left: 4%;
+    }
+    form input{
+        width: 354px;
+    }
+    form textarea{
+        width: 354px;
+    }
+    .call,.mail{
     gap: 20px;
-    padding: 10px 30px;
+    padding: 5px;
+    width: 221px;
+
+}
+.call-details{
+    top: 250px;
+    left: 2%;
+    gap: 40px;
+}
+.footer{
+    font-size: 10px;
+    margin-top: 0px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ----------------------MEDIA QUERY FOR TABLET--------------------------------------------------------------------------------------------------------------------------- */
@@ -763,32 +845,38 @@ iframe{
     .flat img {
         width: 350px;
     }
-     .cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 30px;
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 30px;
+    }
+    .contact-us .text{
+        top: 4%;
+    }
+     iframe {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        height: 250px;
+    }
+     form {
+        position: relative;
+        width: 500px;
+        top: 180px;
+        left: 17%;
+    }
+    .call-details{
+    top: 250px;
+    left: 10%;
+    gap: 40px;
+}
+.footer{
+    margin-top: 0;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -867,4 +955,56 @@ iframe{
         padding: 5px 30px;
     }
 
+}
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------PROPERTY DETAILS CSS--------------------------------------------------------------------------------------- */
+.behind-image img{
+    width: 100%;
+}
+.behind-image{
+        position: relative;
+}
+.behind-text{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 38%;
+}
+.behind-text span{
+    background-color: white;
+    padding: 10px 15PX;
+    font-size: 10px;
+}
+.behind-text h1{
+    color: white;
+    font-weight:bolder;
+    padding-top: 25px;
+}
+.apartment{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+
+/* ---------------------------MEDIA QUERIES FOR LARGE MOBILE--------------------------------------------------------------------------------------------- */
+@media (min-width:425px) and (max-width:767px) {
+.apartment{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px ;
+}
+.behind-text span{
+    background-color: white;
+    padding: 2px 5PX;
+    font-size: 5px;
+}
+.behind-text h1{
+    font-size: 10px;
+    padding-top: 5px;
+}
+.behind-text{
+    top: 20%;
+}
 }
