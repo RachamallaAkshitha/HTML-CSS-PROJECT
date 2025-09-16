@@ -113,6 +113,7 @@
 
 .accordion {
     width: 450px;
+    background-color: whitesmoke;
 }
 
 .accordion-item {
@@ -336,9 +337,10 @@ h2 {
     padding: 4px;
 }
 
-/* Properties */
-.properties span,
-h2 {
+.properties h3 {
+    text-align: center;
+}
+.properties span{
     text-align: center;
 }
 
@@ -417,13 +419,13 @@ h2 {
     width: 100%;
 }
 
-iframe {
+.contact-us iframe {
     position: absolute;
     top: 50%;
     right: 50%;
 }
 
-form {
+.contact-us form {
     padding: 20px 25px;
     background-color: white;
     position: absolute;
@@ -522,7 +524,7 @@ form button {
 .behind-text span {
     background-color: white;
     padding: 10px 15PX;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .behind-text h1 {
@@ -564,12 +566,14 @@ form button {
     width: 880px;
     text-align: justify;
 }
-.apartment-text .accordion{
+
+.apartment-text .accordion {
     width: 900px;
     background-color: whitesmoke;
     margin-bottom: 60px;
 }
-.foot{
+
+.foot {
     height: 80px;
     background-color: black;
     color: white;
@@ -597,7 +601,7 @@ form button {
 .back-text span {
     background-color: white;
     padding: 10px 15PX;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .back-text h1 {
@@ -605,28 +609,32 @@ form button {
     font-weight: bolder;
     padding-top: 25px;
 }
-.properties-buttons{
+
+.properties-buttons {
     display: flex;
     gap: 25px;
     justify-content: center;
 }
-.properties-buttons button{
+
+.properties-buttons button {
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 5px 15px;
     border: none;
-    margin-top:80px ;
+    margin-top: 80px;
     margin-bottom: 60px;
 }
-.number{
+
+.number {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 40px;
     margin-bottom: 80px;
 }
-.number button{
+
+.number button {
     background-color: black;
     color: white;
     border-radius: 50%;
@@ -634,6 +642,68 @@ form button {
     width: 40px;
     border: none;
 }
+
+/* -----------------------------------------CONTACT US---------------------------------------------------------------------------------------------------- */
+.contact-image img {
+    width: 100%;
+}
+
+.contact-image {
+    position: relative;
+}
+
+.contact-text {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 40%;
+}
+
+.contact-text span {
+    background-color: white;
+    padding: 10px 15PX;
+    font-size: 10px;
+}
+
+.contact-text h1 {
+    color: white;
+    font-weight: bolder;
+    padding-top: 25px;
+}
+
+.agents h2 {
+    text-align: start;
+}
+
+.agents p {
+    width: 650px;
+}
+
+.get-in {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 120px;
+}
+
+.get-in form {
+    padding: 20px 25px;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px lightgray;
+}
+
+.location iframe {
+    width: 100%;
+    padding: 10px 120px;
+    margin-bottom: 90px;
+
+}
+
+
+
+
+
 /* ------------------------------------------MEDIA QUERY FOR LARGE MOBILE--------------------------------------------------------------------------------------------------------------------- */
 @media (min-width:425px) and (max-width:767px) {
     .top-bar {
@@ -816,7 +886,7 @@ form button {
         padding: 10px 30px;
     }
 
-    iframe {
+    .contact-us iframe {
         position: absolute;
         top: 9%;
         left: 9%;
@@ -837,7 +907,7 @@ form button {
         font-size: 12px;
     }
 
-    form {
+    .contact-us form {
         position: relative;
         width: 400px;
         top: 207px;
@@ -895,7 +965,7 @@ form button {
     }
 
     .behind-text {
-        top:18%;
+        top: 18%;
         left: 40%;
     }
 
@@ -912,12 +982,13 @@ form button {
     .apartment-text h4 {
         padding-bottom: 20px;
     }
-    .apartment-text .accordion{
+
+    .apartment-text .accordion {
         width: 100%;
     }
 
-/* --------------------PROPERTIES------------------------------------------------------------------------------------------------------------------- */
-     .back-text span {
+    /* --------------------PROPERTIES------------------------------------------------------------------------------------------------------------------- */
+    .back-text span {
         padding: 1px 4px;
         font-size: 7px;
     }
@@ -929,16 +1000,64 @@ form button {
 
     .back-text {
         top: 20%;
-        left:42%;
+        left: 42%;
     }
-    .properties-buttons button{
-    padding: 4px 5px;
-}
-.foot {
+
+    .properties-buttons button {
+        padding: 4px 5px;
+    }
+
+    .foot {
         font-size: 10px;
         margin-top: 0px;
     }
 
+    /* -------------------------------------CONTACT US------------------------------------------------------------------------------------------------------- */
+    .contact-text {
+        top: 20%;
+        left: 40%;
+    }
+
+    .contact-text span {
+        background-color: white;
+        padding: 2px 3PX;
+        font-size: 6px;
+    }
+
+    .contact-text h1 {
+        padding-top: 5px;
+        font-size: 11px;
+    }
+
+    .agents p {
+        width: 400px;
+        text-align: justify;
+    }
+    .agents .connect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 80px 20px;
+    }
+
+    .get-in form {
+        width: 400px;
+    }
+
+    .connect p {
+        width: 150px;
+    }
+
+    .location iframe {
+        padding: 10px 10px;
+
+    }
 }
 
 
@@ -1075,14 +1194,14 @@ form button {
         top: 4%;
     }
 
-    iframe {
+    .contact-us iframe {
         position: absolute;
         top: 15%;
         left: 10%;
         height: 250px;
     }
 
-    form {
+    .contact-us form {
         position: relative;
         width: 500px;
         top: 180px;
@@ -1091,20 +1210,24 @@ form button {
 
     .call-details {
         top: 250px;
-        left: 10%;
+        left: 17%;
+        width: 500px;
         gap: 40px;
     }
 
     .footer {
         margin-top: 0;
     }
-    .apartment-text .accordion{
+
+    .apartment-text .accordion {
         width: 100%;
     }
-     .back-text span {
+
+    .back-text span {
         padding: 1px 4px;
         font-size: 10px;
     }
+
     .back-text h1 {
         font-size: 20px;
         padding-top: 5px;
@@ -1112,7 +1235,7 @@ form button {
 
     .back-text {
         top: 20%;
-        left:42%;
+        left: 42%;
     }
 
 
@@ -1130,10 +1253,10 @@ form button {
     }
 
     .behind-text {
-        top:28%;
+        top: 28%;
         left: 40%;
     }
-    
+
     .apartment {
         display: flex;
         flex-direction: column;
@@ -1159,11 +1282,38 @@ form button {
         width: 700px;
     }
 
+/* ------------------CONTACT US---------------------------------------------------------------------- */
+   .contact-text {
+        top: 25%;
+        left: 41%;
+    }
+
+    .contact-text span {
+        padding: 5px 5PX;
+        font-size: 10px;
+    }
+
+    .contact-text h1 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+.get-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 80px 50px;
+    }
+    .connect p {
+        width: 150px;
+    }
+       .agents .connect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-
-
-
 /* ------------------MEDIA QUERIES FOR LAPTOP-------------------------- */
 @media (min-width:1024px) and (max-width:1439px) {
     .place {
